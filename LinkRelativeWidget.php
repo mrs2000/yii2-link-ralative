@@ -126,6 +126,7 @@ JS;
         $this->view->registerJs($js1, View::POS_READY);
 
         echo Select2::widget([
+            'theme' => Select2::THEME_BOOTSTRAP,
             'name' => 'user',
             'options' => ['placeholder' => $this->placeholder],
             'pluginOptions' => [
